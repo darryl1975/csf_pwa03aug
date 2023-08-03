@@ -7,6 +7,7 @@ import { ServiceWorkerModule } from '@angular/service-worker';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgMaterialModule } from './ng-material/ng-material.module';
 import { EmployeeCreateComponent } from './employee-create/employee-create.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,9 @@ import { EmployeeCreateComponent } from './employee-create/employee-create.compo
       registrationStrategy: 'registerWhenStable:30000'
     }),
     BrowserAnimationsModule,
-    NgMaterialModule
+    NgMaterialModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
