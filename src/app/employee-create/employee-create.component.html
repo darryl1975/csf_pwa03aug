@@ -1,0 +1,13 @@
+<p>employee-create works!</p>
+<div class="container-fluid">
+    <form>
+        <mat-form-field>
+            <mat-label>Name</mat-label>
+            <br>
+            <input matInput formControlName="name" #fullName />
+            <mat-hint>Please enter your full name</mat-hint>
+            <mat-error>Name is a required field</mat-error>
+            <mat-error>Minimum 20 characters required for name field</mat-error>
+        </mat-form-field>
+    </form>
+</div>
